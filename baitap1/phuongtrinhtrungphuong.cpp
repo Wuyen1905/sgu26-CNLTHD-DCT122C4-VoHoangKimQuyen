@@ -72,16 +72,16 @@ int main() {
 // }
 // return 0 ;
     vector<TestCase> tests = {
-        // ✅ PASS
+        //  PASS
         {1, -5, 4, 4, {2, -2, 1, -1}, "Phuong trinh co 4 nghiem thuc"},
         {1, 0, -1, 4, {1, -1, 0, 0}, "Phuong trinh co 4 nghiem (y^2-1=0)"},
 
-        // ❌ FAIL: mong đợi sai số nghiệm
+        //  FAIL: mong đợi sai số nghiệm
         {1, 0, -1, 2, {1, -1}, "FAIL: chi khai bao 2 nghiem nhung thuc te co 4"},
         {0, 1, -1, 2, {1, -1}, "Phuong trinh bac 2 -> co 2 nghiem hop le"}, 
         {0, 1, -1, 2, {2, -2}, "FAIL: mong doi nghiem khac thuc te"},
         
-        // ❌ FAIL: vô nghiệm nhưng test case lại đòi có nghiệm
+        //  FAIL: vô nghiệm nhưng test case lại đòi có nghiệm
         {1, 1, 1, 2, {1, -1}, "FAIL: thuc te vo nghiem"}
     };
 
